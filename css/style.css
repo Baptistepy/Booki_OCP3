@@ -9,6 +9,28 @@
     --filter-bg-color: #DEEBFF;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
 .fa-solid {
     color: var(--main-color);
 }
