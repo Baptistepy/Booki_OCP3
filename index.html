@@ -18,12 +18,12 @@
     <div class="main-container">
         <header>
             <nav>
-                <img src="images/logo/Booki.png" alt="Logo Booki">
-                <ul>
-                    <li>
+                <img class="logo_site" src="images/logo/Booki.png" alt="Logo Booki">
+                <ul class="nav_bar">
+                    <li class="bluebar">
                         <a href="#hebergements">Hébergements</a>
                     </li>
-                    <li>
+                    <li class="bluebar">
                         <a href="#activites">Activités</a>
                     </li>
                 </ul>
@@ -35,22 +35,34 @@
 
                 <form>
                     <span class="fa-solid fa-location-dot"></span>
-                    <input type="search" value="Marseille,France">
-                    <button>Rechercher</button>
+                    <input class="search_bar" type="search" value="Marseille,France">
+                    <button class="button_recherche">Rechercher</button>
                 </form>
                 
                 <section class="filters">
                     <h2>Filtres</h2>
-                    <ul>
-                        <li>Économique</li>
-                        <li>Familial</li>
-                        <li>Romantique</li>
-                        <li>Nos pépites</li>
+                    <ul class="filters_bar">
+                        <li class="filter">
+                            <span class="fa-solid fa-money-bill-wave"></span>
+                            <b>Économique</b>
+                        </li>
+                        <li class="filter">
+                            <span class="fa-solid fa-person"></span>
+                            <b>Familial</b>
+                        </li>
+                        <li class="filter">
+                            <span class="fa-solid fa-heart"></span>
+                            <b>Romantique</b>
+                        </li>
+                        <li class="filter">
+                            <span class="fa-solid fa-fire"></span>
+                            <b>Nos pépites</b>
+                        </li>
                     </ul>
                 </section>
                                    
                 <p>
-                    <span class="fa-solid fa-info-circle"></span>
+                    <span class="fa-solid fa-circle-info"></span>
                     Plus de 500 logements sont disponnibles dans cette ville
                 </p>                
             </section>
@@ -61,7 +73,7 @@
                 <section id="hebergements" class="hebergements">
                     <h2>Hébérgements à Marseille</h2>
 
-                    <div>
+                    <div class="card_row1">
                         <article class="card">
                             <!--Premier Hôtel, 1ère Ligne-->
                             <img src="images/hebergements/fred-kleber.jpg" alt="Image de la chambre montrant deux lits">
@@ -120,15 +132,16 @@
                         </article>
 
                         </div>
-                        <div>
-                        <article class="card">
+                    
+                        <div class="card_row2">
+                            <article class="card">
                             <!--Premier Hôtel, 2ème Ligne-->
                                 <img src="images/hebergements/annie-spratt.jpg" alt="Image de la chambre avec un lit et deux oreillers bleu">
-                            <div class="card-content">
-                                <div class="card-txt">
-                                    <h3 class="card-title">Hôtel de la mer</h3>
-                                    <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
-                                </div>
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel de la mer</h3>
+                                        <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
+                                     </div>
                                 <div class="card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -177,7 +190,7 @@
                                 </div>
                             </div>
                         </article>
-
+                    
                         </div>
                         <p>Afficher Plus</p>
 
