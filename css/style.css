@@ -206,19 +206,15 @@ body {
     position: absolute;
     bottom: 10px;
 }
-.card_row1 {
+.cards_row {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 10px;
 }
 
-.card_row2 {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 10px;
-}
+
 
 .hebergements .card-content {
     padding-left: 10px;
