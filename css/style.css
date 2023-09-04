@@ -427,8 +427,15 @@ footer ul {
 }
 
     section h1 {
-        display: flex;
-        align-self: stretch;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    header section p {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     section form {
@@ -450,6 +457,8 @@ footer ul {
     .filters h2 {
         display: flex;
         align-self: baseline;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     form button {
@@ -461,8 +470,8 @@ footer ul {
     }
 
     .filter {
-        width: 130px;
-        height: 35px;
+        width: 115px;
+        height: 30px;
         padding-top: 15px;
         padding-bottom: 0px;
     }
@@ -472,12 +481,82 @@ footer ul {
     }
     
     .filters_bar {
-        display: flex;
-        justify-content: space-evenly;
-        flex-flow: row wrap;
-        text-align:justify
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 14px;
     }
 
+    .populaires {
+        order: 1;
+    }
 
+    .main-container {
+        padding: 0px;
+    }
 
+    .hebergements-and-populaires section {
+        flex-direction: column;
+        border-radius: 0px;
+        margin: 0px;
+        margin-bottom: 10px;
+        background-color: #F2F2F2;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+        align-items: center;
+}
+
+    .populaires-cards .card {
+        width: 320px;
+    }
+
+    .populaires-cards .card-txt {
+        text-align:justify;
+    }
+
+    .hebergements {
+        order: 2;
+        padding: 0px;
+    }
+
+    .hebergements section {
+        background-color: transparent;
+    }
+
+    .hebergements .card {
+        width: 310px;
+    }
+
+    .cards_row {
+        padding: 0px;
+        align-content: center;
+    }
+
+    .lien_plus {
+        text-align: start;
+    }
+
+    .activites {
+        order: 3;
+    }
+
+    .card_activites {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_activites img {
+        height: 141px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    footer ul {
+        gap: 20px;
+    }
 }
