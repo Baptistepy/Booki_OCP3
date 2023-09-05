@@ -59,6 +59,11 @@ img {
     object-fit: contain;
 }
 
+header section h1 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -70,6 +75,7 @@ form {
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 35px;
+    margin-top: 35px;
 }
 
 .fa-location-dot {
@@ -127,6 +133,11 @@ form button {
     border-radius: 25px;
 }
 
+.info_logements {
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+
 .filter span {
     margin-right: 5px;
 }
@@ -158,10 +169,10 @@ body {
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-.card:hover {
+
+.hebergements-and-populaires .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
 .card img {
     object-fit: cover;
 }
@@ -187,7 +198,7 @@ body {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding:  5px 30px 30px 30px;
     box-sizing: border-box;
 }
 
@@ -199,10 +210,14 @@ body {
 .hebergements .card {
     display: flex;
     flex-direction: column;
-    width: 230px;
+    width: 100%;
     height: 190px;
     border: solid 1px #D9D9D9;
     border-radius: 25px;
+}
+
+.hebergements a {
+    width: calc((100% - 60px) / 3);
 }
 
 .hebergements .card-title {
@@ -226,8 +241,6 @@ body {
     gap: 30px;
     padding: 10px;
 }
-
-
 
 .hebergements .card-content {
     padding-left: 10px;
@@ -259,15 +272,21 @@ body {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    width: 100%;
+    margin-top: 20px;
 }
 
+.populaires a {
+    width: calc((100% - 60px) / 3);
+}
 .populaires-cards img {
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
+
 
 .populaires-cards .card-content {
     width: 67%;
@@ -302,6 +321,7 @@ body {
     background: none;
 }
 
+
 .activites h2 {
     padding: 45px 45px 15px 25px;
 }
@@ -315,7 +335,7 @@ body {
     width: 297.5px;
     height: 400px;
     border: none;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .activites figcaption {
@@ -324,6 +344,8 @@ body {
     padding: 18px 15px;
     font-size: 16px;
     font-weight: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 0px 0px 15px 15px;
 }
 
 /****** Footer ***********/
@@ -332,9 +354,8 @@ footer {
     background-color: var(--grey, #F2F2F2);
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 270px;
-    padding: 5px 15px 15px 15px;
+    justify-content: space-between;
+    padding: 5px 150px 15px 15px;
 }    
 
 footer ul {
@@ -349,6 +370,9 @@ footer ul {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    body {
+        font-size: smaller;
+    }
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -363,6 +387,13 @@ footer ul {
         width: 100%;
     }
 
+    .hebergements .card {
+        height: 192px;
+    }
+
+    .hebergements a {
+        width: calc((100% - 60px) / 3);
+    }
     .fa-magnifying-glass {
         display: none;
     }
@@ -372,6 +403,10 @@ footer ul {
         margin-top: 50px;
     }
 
+    .populaires a {
+        width: calc((100% - 60px) / 3);
+    }
+
     .populaires-cards {
         display: flex;
         flex-direction: row;
@@ -379,8 +414,12 @@ footer ul {
     }
 
     .populaires-cards .card {
-        width: 255px;
-        height: 135px
+        width: 100%;
+        height: 146px
+    }
+
+    .populaires-cards img {
+        height: 146px;
     }
 
     .populaires-cards .card-title {
@@ -392,7 +431,7 @@ footer ul {
     }
 
     .activites img {
-        height: 270px;
+        height: 200px;
     }
 
     footer {
@@ -405,6 +444,7 @@ footer ul {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
 
     header nav {
         flex-direction: column;
@@ -475,6 +515,8 @@ footer ul {
         padding-top: 15px;
         padding-bottom: 0px;
     }
+
+    
     
     .filter:hover {
         background-color: #DEEBFF;
