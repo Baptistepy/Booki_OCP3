@@ -160,6 +160,7 @@ body {
 
 .section-title {
     margin: 0;
+    margin-top: 20px;
     font-size: 22px;
 }
 
@@ -445,24 +446,43 @@ footer ul {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    body {
+        font-size: smaller;
+    }
 
     header nav {
         flex-direction: column;
         align-items: center;
+        text-align: center;
         gap: 20px;
     }
 
-    header li {
-        width: max-content;
-    }
 
-    header a:hover {
+    header nav li:hover {  
     border-bottom: 2px solid transparent;
     border-color: #0065FC;
     color: #0065FC;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
-.bluebar:hover {
+
+header li {  
+    border-bottom: 2px solid transparent;
+    border-color: #F2F2F2;
+    padding-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+    .nav_bar {
+        gap: 0px;
+    }
+
+    header .nav_bar li {
+        width: 187.6px;
+    }
+
+
+    .bluebar:hover {
     border-top: 2px solid transparent;
 }
 
@@ -472,22 +492,34 @@ footer ul {
         padding-right: 10px;
     }
 
+    header section h1 {
+        margin-top: 0px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
     header section p {
         font-size: 14px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .search_bar {
+        width: 100%;
+        height: 30px;
     }
 
     section form {
         display: flex;
         justify-content: center;
-        padding-top: 25px;
+        padding-bottom: 15px;
+        padding-top: 0px;
     }
 
     .fa-magnifying-glass {
         display: initial;
         height: 15px;
-        padding: 15px; 
+        padding: 15px 15px 20px 15px; 
         border: none;
         border-radius: 15px;
         color: white;
@@ -497,8 +529,8 @@ footer ul {
     .filters h2 {
         display: flex;
         align-self: baseline;
-        padding-left: 20px;
         padding-right: 20px;
+        padding-left: 15px;
     }
 
     form button {
@@ -506,26 +538,39 @@ footer ul {
     }
 
     .filters {
-        flex-direction: column;        
+        display: flex;
+        flex-direction: column; 
     }
 
     .filter {
-        width: 115px;
-        height: 30px;
-        padding-top: 15px;
-        padding-bottom: 0px;
+        padding: 15px;
+        width:calc((100% - 20px) / 3);  
+        height: 5px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        font-size: smaller;
     }
 
-    
+    .filters_bar b {
+        text-align: center;
+    }
     
     .filter:hover {
         background-color: #DEEBFF;
     }
     
     .filters_bar {
-        flex-direction: row;
         flex-wrap: wrap;
-        font-size: 14px;
+        padding: 0px;
+    }
+
+    .info_logements {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0px;
+        padding-left: 10px;
     }
 
     .populaires {
@@ -541,38 +586,59 @@ footer ul {
         border-radius: 0px;
         margin: 0px;
         margin-bottom: 10px;
-        background-color: #F2F2F2;
+    }
+
+    .hebergements-and-populaires section .hebergements {
+        background-color: white;
     }
 
     .populaires-cards {
         flex-direction: column;
-        align-items: center;
 }
 
-    .populaires-cards .card {
-        width: 320px;
-    }
+.populaires-cards .card {
+    height: 126px;
+}
 
-    .populaires-cards .card-txt {
-        text-align:justify;
+.populaires-cards img {
+    height: 126px;
+}
+
+    .populaires-cards a {
+        width: 100%;
     }
 
     .hebergements {
         order: 2;
-        padding: 0px;
     }
 
-    .hebergements section {
-        background-color: transparent;
+    .hebergements a {
+        width: 100%;
     }
 
     .hebergements .card {
-        width: 310px;
+        height: 192px;
+    }
+
+    .hebergements .card-title {
+        margin-bottom: 12px;
+        margin-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    .hebergements .card-subtitle {
+        margin-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    .hebergements .card-rating {
+        padding-bottom: 3px;
     }
 
     .cards_row {
         padding: 0px;
-        align-content: center;
+        align-content: start;
+        flex-direction: column;
     }
 
     .lien_plus {
