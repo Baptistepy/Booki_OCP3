@@ -116,7 +116,7 @@ form button {
 }
 
 .filter:hover {
-    background-color: #DEEBFF;
+    background-color: var(--filter-bg-color);
 }
 
 .filters_bar {
@@ -514,6 +514,8 @@ header li {
         justify-content: center;
         padding-bottom: 15px;
         padding-top: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .fa-magnifying-glass {
@@ -586,10 +588,6 @@ header li {
         border-radius: 0px;
         margin: 0px;
         margin-bottom: 10px;
-    }
-
-    .hebergements-and-populaires section .hebergements {
-        background-color: white;
     }
 
     .populaires-cards {
@@ -665,6 +663,6 @@ header li {
     }
 
     footer ul {
-        gap: 20px;
+        gap: 15px;
     }
 }
