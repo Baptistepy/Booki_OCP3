@@ -288,8 +288,6 @@ body {
     border-bottom-left-radius: 20px;
 }
 
-
-
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
@@ -315,7 +313,7 @@ body {
 /****** Activités ***********/
 
 .activites {
-    padding-bottom: 35px;
+    padding: 30px;
 }
 
 .activites li {
@@ -324,12 +322,21 @@ body {
 
 
 .activites h2 {
-    padding: 45px 45px 15px 25px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    padding-right: 0px;
+    margin-bottom: 30px;
+    padding-top: 30px;
 }
 
 .card_activites {
     display: flex;
     gap: 30px;
+}
+
+.card_activites li{
+    padding: 0px;
 }
 
 .activites img {
@@ -371,6 +378,13 @@ footer ul {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1220px) {
+    .activites figcaption {
+        height: 40px;
+    }
+}
+
+
 @media (max-width: 1024px) {
 
     body {
