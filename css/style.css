@@ -274,7 +274,11 @@ body {
 .populaires-cards .card {
     display: flex;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.populaires-cards {
+    margin-top: 30px;
 }
 
 .populaires a {
@@ -318,7 +322,7 @@ body {
     padding-bottom: 35px;
 }
 
-.activites .card {
+.activites li {
     background: none;
 }
 
@@ -433,6 +437,10 @@ footer ul {
 
     .activites img {
         height: 200px;
+    }
+
+    .activites h2 {
+        padding: 45px 45px 15px 0px;
     }
 
     footer {
@@ -587,7 +595,7 @@ header li {
         flex-direction: column;
         border-radius: 0px;
         margin: 0px;
-        margin-bottom: 10px;
+
     }
 
     .populaires-cards {
